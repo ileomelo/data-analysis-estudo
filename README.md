@@ -59,7 +59,26 @@ Este projeto tem como foco principal:
 
 ```bash
 # Clone o repositório
-git clone {link do repositorio}
+git clone https://github.com/ileomelo/data-analysis-estudo.git
 
 # Instale as dependências (recomendado: ambiente virtual)
-pip install polars pandas altair numpy marimo
+
+# Para Unix/macOS
+python3 -m venv venv
+source venv/bin/activate
+
+# Para Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# Instale as dependências
+pip install -r requirements.txt
+
+```
+
+
+## 🚀 Como o Nootebook Marimo
+```bash
+# Execute o notebook principal com Marimo
+marimo run shopping.py
+```
